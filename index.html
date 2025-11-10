@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conductores</title>
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <img src="logo.png" alt="Logo de la empresa" class="logo">
+    <h1>Conductores</h1>
+    <form id="auth-form">
+        <label for="auth-code">Código de autorización:</label>
+        <input type="password" id="auth-code" placeholder="Ingresa el código">
+        <button type="submit">Habilitar edición</button>
+    </form>
+    <p id="auth-message" style="color: red; display: none;">Código incorrecto</p>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Número Económico</th>
+                <th>Rutas Lunes</th>
+                <th>Rutas Martes</th>
+                <th>Rutas Miércoles</th>
+                <th>Rutas Jueves</th>
+                <th>Rutas Viernes</th>
+                <th>Rutas Sábado</th>
+                <th>Puntaje</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+        <tbody id="tabla-conductores">
+            <!-- Los datos se cargarán aquí -->
+        </tbody>
+    </table>
+    <script src="index.js"></script>
+</body>
+</html>
